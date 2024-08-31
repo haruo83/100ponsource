@@ -1,0 +1,13 @@
+#02.「パトカー」＋「タクシー」＝「パタトクカシーー」
+
+def interleave_strings(str1, str2):
+    # 2つの文字列をジップして、一文字ずつ交互に結合
+    return ''.join([i + j for i, j in zip(str1, str2)])
+
+# 与えられた文字列
+str1 = "パトカーpo"
+str2 = "タクシー"
+
+# 文字列を交互に結合
+result = interleave_strings(str1, str2)
+print(result)  # 結果を表示
