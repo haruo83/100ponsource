@@ -1,0 +1,9 @@
+# 文を定義します
+sentence = "Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics."
+
+# 文を単語に分割し、単語ごとに長さを測定します
+words = sentence.split()
+word_lengths = [len(word.strip(',.')) for word in words]
+
+# 結果を出力します
+print(word_lengths)
